@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   NavLink
@@ -60,6 +60,7 @@ function AppContent() {
               <NavLink to="/counter">
                 Counter
               </NavLink>
+
               <NavLink to="/registration">
                 Registration
               </NavLink>
@@ -103,9 +104,9 @@ function AppContent() {
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <HashRouter>
       <AppContent />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
