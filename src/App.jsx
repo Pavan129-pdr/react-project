@@ -12,6 +12,7 @@ import Home from "./pages/Home";
 import Users from "./pages/Users";
 import About from "./pages/About";
 import Task3 from "./components/Task3";
+import Counter from "./pages/Counter";
 
 import "./App.css";
 
@@ -55,6 +56,10 @@ function AppContent() {
                 About
               </NavLink>
 
+              <NavLink to="/counter">
+                Counter
+              </NavLink>
+
               <button
                 className="logout-nav-btn"
                 onClick={handleLogout}
@@ -73,6 +78,8 @@ function AppContent() {
             <Route path="/users" element={<Users />} />
 
             <Route path="/about" element={<About />} />
+
+            <Route path="/counter" element={<Counter />} />
 
           </Routes>
 

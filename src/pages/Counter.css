@@ -1,0 +1,204 @@
+
+.counter-page {
+  min-height: 75vh;
+  padding: 55px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.light-theme {
+  background: #eef3fb;
+  color: #111827;
+}
+
+.dark-theme {
+  background: #111827;
+  color: #f9fafb;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 620px;
+  padding: 38px;
+  border-radius: 22px;
+  box-sizing: border-box;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  transition: background 0.3s ease;
+}
+
+.light-theme .counter-card {
+  background: #ffffff;
+}
+
+.dark-theme .counter-card {
+  background: #1f2937;
+}
+
+.counter-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.profile-circle {
+  width: 65px;
+  height: 65px;
+  min-width: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.counter-header h1 {
+  font-size: 25px;
+  margin: 0 0 7px;
+}
+
+.counter-header p {
+  margin: 0;
+  opacity: 0.7;
+}
+
+.theme-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-top: 1px solid #9ca3af55;
+  border-bottom: 1px solid #9ca3af55;
+}
+
+.theme-button {
+  background: #1e40af;
+  color: white;
+  border: none;
+  padding: 11px 17px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.counter-display {
+  text-align: center;
+  margin: 35px 0;
+  padding: 25px;
+  border-radius: 16px;
+  background: rgba(59, 130, 246, 0.09);
+}
+
+.counter-display p {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.counter-display h2 {
+  font-size: 65px;
+  margin: 12px 0 0;
+  color: #2563eb;
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.counter-buttons button,
+.reset-button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.counter-buttons button {
+  flex: 1;
+}
+
+.increment-button {
+  background: #16a34a;
+}
+
+.decrement-button {
+  background: #dc2626;
+}
+
+.reset-button {
+  width: 100%;
+  margin-top: 15px;
+  background: #64748b;
+}
+
+.counter-buttons button:hover,
+.reset-button:hover,
+.theme-button:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.counter-message {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+@media (max-width: 550px) {
+  .counter-page {
+    padding: 25px 14px;
+  }
+
+  .counter-card {
+    padding: 23px 18px;
+  }
+
+  .counter-header h1 {
+    font-size: 20px;
+  }
+
+  .counter-buttons {
+    flex-direction: column;
+  }
+
+  .counter-display h2 {
+    font-size: 52px;
+  }
+}
+.light-theme .theme-button {
+  background: #dbeafe;
+  color: #111827;
+}
+
+.light-theme .increment-button {
+  background: #bbf7d0;
+  color: #111827;
+}
+
+.light-theme .decrement-button {
+  background: #fecaca;
+  color: #111827;
+}
+
+.light-theme .reset-button {
+  background: #e2e8f0;
+  color: #111827;
+}
+
+.dark-theme button {
+  color: #ffffff;
+}
