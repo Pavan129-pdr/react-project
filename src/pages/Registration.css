@@ -1,0 +1,233 @@
+
+/* Main Registration Page */
+.registration-page {
+  min-height: 85vh;
+  padding: 55px 20px;
+  background: linear-gradient(135deg, #eaf1ff, #f4f7ff, #e9edff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Main Card */
+.registration-card {
+  width: 100%;
+  max-width: 950px;
+  padding: 45px 55px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 18px 55px rgba(31, 57, 112, 0.12);
+  box-sizing: border-box;
+  border: 1px solid #e7edfa;
+}
+
+/* Profile Avatar */
+.registration-icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.25);
+}
+
+/* Heading */
+.registration-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.registration-heading h1 {
+  color: #172554;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  letter-spacing: -0.7px;
+}
+
+.registration-heading p {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Form Grid */
+.registration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px 28px;
+}
+
+.registration-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.registration-field label {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.registration-field input,
+.registration-field select,
+.registration-field textarea {
+  width: 100%;
+  min-height: 49px;
+  padding: 13px 16px;
+  background: #f8faff;
+  border: 1.5px solid #dce4f2;
+  border-radius: 11px;
+  color: #111827;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+.registration-field input::placeholder,
+.registration-field textarea::placeholder {
+  color: #94a3b8;
+}
+
+.registration-field input:focus,
+.registration-field select:focus,
+.registration-field textarea:focus {
+  background: #ffffff;
+  border-color: #3975ed;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+.registration-field textarea {
+  resize: vertical;
+  min-height: 105px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* Error Messages */
+.error-message {
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Password Checkbox */
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+  color: #111827;
+  font-size: 14px;
+}
+
+.show-password input {
+  width: 17px;
+  height: 17px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+/* Buttons */
+.registration-actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.registration-actions button {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  border-radius: 11px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
+}
+
+.clear-button {
+  background: #e8edf7;
+  color: #172554;
+}
+
+.submit-button:hover,
+.clear-button:hover {
+  transform: translateY(-3px);
+}
+
+.submit-button:hover {
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.3);
+}
+
+.clear-button:hover {
+  background: #dce5f5;
+}
+
+/* Success Message */
+.success-message {
+  padding: 17px;
+  margin-bottom: 25px;
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  border-radius: 11px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Footer */
+.registration-footer {
+  color: #64748b;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .registration-page {
+    padding: 25px 12px;
+  }
+
+  .registration-card {
+    padding: 28px 20px;
+  }
+
+  .registration-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .registration-heading h1 {
+    font-size: 25px;
+  }
+
+  .registration-actions {
+    flex-direction: column;
+  }
+}

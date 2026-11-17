@@ -8,6 +8,7 @@ import {
   NavLink
 } from "react-router-dom";
 
+import Registration from "./pages/Registration";
 import Home from "./pages/Home";
 import Users from "./pages/Users";
 import About from "./pages/About";
@@ -59,6 +60,9 @@ function AppContent() {
               <NavLink to="/counter">
                 Counter
               </NavLink>
+              <NavLink to="/registration">
+                Registration
+              </NavLink>
 
               <button
                 className="logout-nav-btn"
@@ -80,6 +84,8 @@ function AppContent() {
             <Route path="/about" element={<About />} />
 
             <Route path="/counter" element={<Counter />} />
+
+            <Route path="/registration" element={<Registration />} />
 
           </Routes>
 
